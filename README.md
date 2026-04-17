@@ -177,6 +177,13 @@ Les livrables attendus :
 - wide portfolio cover 1600x900
 - pitch deck recruteurs / jury en 9 slides
 
+Livrables déjà créés :
+- logo / wordmark Canva
+- avatar carré Canva
+- cover wide Canva
+- social preview Canva
+- deck Canva recruteurs / jury
+
 ## Notes importantes
 - ce workspace fournit `git`, `gh`, `node`, `npm` et `python3`
 - ce workspace ne fournit pas `docker`, `php`, `composer` ni `wp-cli`
