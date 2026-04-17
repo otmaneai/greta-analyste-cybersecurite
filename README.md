@@ -168,6 +168,8 @@ Voir [docs/runtime-validation.md](docs/runtime-validation.md) pour :
 ## Canva package
 Le brief source utilisé pour la création des assets Canva et du pitch deck est dans [docs/canva-portfolio-brief.md](docs/canva-portfolio-brief.md).
 
+Les liens Canva déjà créés sont dans [docs/canva-deliverables.md](docs/canva-deliverables.md).
+
 Les livrables attendus :
 - wordmark principal
 - avatar carré GitHub
