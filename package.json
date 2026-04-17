@@ -1,0 +1,10 @@
+{
+  "name": "greta-analyste-cybersecurite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "generate:public-assets": "python3 scripts/generate-public-assets.py",
+    "validate:inventory": "node scripts/validate-inventory.mjs",
+    "serve:preview": "node scripts/serve-preview.mjs"
+  }
+}

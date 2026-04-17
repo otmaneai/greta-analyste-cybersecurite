@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ressource Parcinfo — Preview</title>
+    <link rel="stylesheet" href="../wp-content/themes/greta-analyste-cybersecurite/style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="gac-shell bg-[#0e1116] text-white antialiased">
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0e1116]/90 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a class="text-sm font-black uppercase tracking-[0.16em] text-white" href="./index.html">GRETA ANALYSTE CYBERSÉCURITÉ</a>
+        <nav class="hidden items-center gap-6 text-sm text-slate-300 lg:flex">
+          <a href="./php-path.html" class="transition hover:text-white">Path</a>
+          <a href="./php-module.html" class="transition hover:text-white">Module</a>
+          <a href="./php-lesson.html" class="transition hover:text-white">Lesson</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="border-b border-white/10 py-16">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
+          <div class="space-y-5">
+            <p class="gac-section-label">Resource detail preview</p>
+            <h1 class="text-5xl font-black text-white">Déployer le site client3 parcinfo avec Apache 2, PHP et MariaDB</h1>
+            <div class="flex flex-wrap gap-3">
+              <span class="gac-tag text-white">PDF</span>
+              <span class="gac-tag text-white">Canonical</span>
+              <span class="gac-tag text-white">12 pages</span>
+            </div>
+            <p class="max-w-3xl text-lg leading-8 text-slate-300">
+              Architecture d'un petit site PHP dynamique relié à MariaDB sous Apache. Cette ressource ancre le parcours PHP dans une application réelle.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a class="gac-button-primary" href="../pdfs_context/Support_Parcinfo_PHP_MariaDB_Apache_GRETA_v1.pdf" target="_blank" rel="noopener noreferrer">Ouvrir le PDF</a>
+              <a class="gac-button-secondary" href="./index.html#resources">Retour à la bibliothèque</a>
+            </div>
+          </div>
+          <div class="gac-card p-6">
+            <p class="gac-section-label">Fichier source</p>
+            <div class="mt-4 space-y-4 text-sm text-slate-300">
+              <p><strong class="text-white">Nom :</strong> Support_Parcinfo_PHP_MariaDB_Apache_GRETA_v1.pdf</p>
+              <p><strong class="text-white">Origine :</strong> <code>pdfs_context/</code> intégré au projet.</p>
+              <p><strong class="text-white">Usage :</strong> support de révision, preuve de contenu source et brique documentaire du parcours.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-white/10 py-16">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+          <div class="space-y-4">
+            <p class="gac-section-label">Couverture thématique</p>
+            <h2 class="text-4xl font-black text-white">Domaines et usage dans la plateforme.</h2>
+            <div class="flex flex-wrap gap-2">
+              <span class="gac-tag text-white">php</span>
+              <span class="gac-tag text-white">apache</span>
+              <span class="gac-tag text-white">mariadb</span>
+              <span class="gac-tag text-white">web</span>
+            </div>
+            <p class="text-base leading-8 text-slate-400">
+              Ce support n'est pas traité comme un simple fichier joint. Il sert à documenter un parcours, à donner du contexte aux leçons et à rendre la matière source consultable depuis le produit lui-même.
+            </p>
+          </div>
+          <div class="gac-card p-6">
+            <p class="gac-section-label">Pourquoi il compte</p>
+            <ul class="mt-4 space-y-3 text-sm leading-7 text-slate-300">
+              <li>Il matérialise le lien entre contenu de formation et architecture produit.</li>
+              <li>Il sert de support de révision directement relié au parcours PHP.</li>
+              <li>Il renforce la crédibilité portfolio du projet en montrant la matière réelle utilisée.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-8 max-w-3xl space-y-4">
+            <p class="gac-section-label">Linked learning paths</p>
+            <h2 class="text-4xl font-black text-white">Parcours reliés à cette ressource.</h2>
+          </div>
+          <div class="grid gap-6 lg:grid-cols-2">
+            <a class="gac-card overflow-hidden transition hover:-translate-y-1" href="./php-path.html">
+              <div class="grid gap-0 md:grid-cols-[0.9fr_1.1fr]">
+                <div class="min-h-[240px]"><img class="h-full w-full object-cover" src="./assets/php-path.png" alt="PHP"></div>
+                <div class="space-y-5 p-6">
+                  <div class="flex flex-wrap gap-2">
+                    <span class="gac-tag text-white">Structurant</span>
+                    <span class="gac-tag text-white">Hybrid</span>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-black text-white">Développement PHP</h3>
+                    <p class="mt-3 text-sm leading-7 text-slate-400">Applications web dynamiques, MariaDB, validation et WordPress.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

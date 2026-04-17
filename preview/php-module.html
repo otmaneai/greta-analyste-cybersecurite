@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Module PHP — Preview</title>
+    <link rel="stylesheet" href="../wp-content/themes/greta-analyste-cybersecurite/style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="gac-shell bg-[#0e1116] text-white antialiased">
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0e1116]/90 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a class="text-sm font-black uppercase tracking-[0.16em] text-white" href="./index.html">GRETA ANALYSTE CYBERSÉCURITÉ</a>
+        <nav class="hidden items-center gap-6 text-sm text-slate-300 lg:flex">
+          <a href="./php-path.html" class="transition hover:text-white">Path</a>
+          <a href="./php-lesson.html" class="transition hover:text-white">Lesson</a>
+          <a href="./parcinfo-resource.html" class="transition hover:text-white">Resource</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="border-b border-white/10 py-16">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+          <div class="space-y-5">
+            <p class="gac-section-label">Module detail preview</p>
+            <h1 class="text-5xl font-black text-white">Architecture d'un site PHP + MariaDB</h1>
+            <div class="flex flex-wrap gap-3">
+              <span class="gac-tag text-white">Module 1</span>
+              <span class="gac-tag text-white">54 min</span>
+              <a class="gac-tag text-white" href="./php-path.html">Développement PHP</a>
+            </div>
+            <p class="max-w-3xl text-lg leading-8 text-slate-300">
+              Lire la chaîne navigateur vers Apache puis PHP et MariaDB à travers le site parcinfo, avec les contraintes de déploiement réellement rencontrées.
+            </p>
+            <p class="max-w-3xl text-base leading-8 text-slate-400">
+              Ce module rend visible la logique de paramètres imposés par le code, les permissions Linux et la cohérence serveur vers application puis base.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a class="gac-button-primary" href="./php-lesson.html">Ouvrir la première leçon</a>
+              <a class="gac-button-secondary" href="./php-path.html">Retour au parcours</a>
+            </div>
+          </div>
+          <div class="gac-card p-6">
+            <p class="gac-section-label">Prérequis</p>
+            <ul class="mt-4 space-y-3 text-sm leading-7 text-slate-300">
+              <li>Comprendre le rôle d'un serveur web.</li>
+              <li>Lire une base MariaDB dédiée et un utilisateur SQL dédié.</li>
+              <li>Suivre un déploiement Linux simple.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-white/10 py-16">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+          <div class="space-y-4">
+            <p class="gac-section-label">Learning objectives</p>
+            <h2 class="text-4xl font-black text-white">Ce module doit rendre la progression visible.</h2>
+            <ul class="space-y-3 text-base leading-8 text-slate-300">
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-emerald-300"></span><span>Identifier les briques techniques qui composent une application PHP dynamique.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-emerald-300"></span><span>Relier paramètres d'application, permissions Linux et base de données.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-emerald-300"></span><span>Préparer la lecture de WordPress comme application PHP complète.</span></li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <p class="gac-section-label">Lessons</p>
+            <h2 class="text-4xl font-black text-white">Leçons rattachées</h2>
+            <div class="grid gap-4">
+              <a class="gac-card p-5 transition hover:-translate-y-1" href="./php-lesson.html">
+                <h3 class="text-lg font-bold text-white">index.php et dump SQL</h3>
+              </a>
+              <div class="gac-card p-5">
+                <h3 class="text-lg font-bold text-white">Paramètres imposés par le code</h3>
+              </div>
+              <div class="gac-card p-5">
+                <h3 class="text-lg font-bold text-white">Permissions et déploiement</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-white/10 py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-8 max-w-3xl space-y-4">
+            <p class="gac-section-label">Module sequence</p>
+            <h2 class="text-4xl font-black text-white">Continuité du parcours.</h2>
+          </div>
+          <div class="grid gap-4 lg:grid-cols-3">
+            <div class="gac-card p-5">
+              <p class="gac-section-label">Module précédent</p>
+              <p class="mt-3 text-sm leading-7 text-slate-400">Début du parcours. Ce module ouvre la progression PHP.</p>
+            </div>
+            <div class="gac-card p-5">
+              <p class="gac-section-label">Point courant</p>
+              <h3 class="mt-3 text-xl font-bold text-white">Architecture d'un site PHP + MariaDB</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-400">3 leçons rattachées, 1 ressource centrale et un pont direct vers WordPress.</p>
+            </div>
+            <div class="gac-card p-5">
+              <p class="gac-section-label">Module suivant</p>
+              <h3 class="mt-3 text-xl font-bold text-white">PHP coeur de langage</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-400">Après l'architecture, la progression consolide la syntaxe et les structures du langage.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-8 max-w-3xl space-y-4">
+            <p class="gac-section-label">Related resources</p>
+            <h2 class="text-4xl font-black text-white">Supports source pour approfondir le module.</h2>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <a class="gac-card p-6 transition hover:-translate-y-1" href="./parcinfo-resource.html">
+              <div class="flex flex-wrap gap-2">
+                <span class="gac-tag text-white">PDF</span>
+                <span class="gac-tag text-white">Canonical</span>
+              </div>
+              <h3 class="mt-5 text-2xl font-black text-white">Déployer le site client3 parcinfo avec Apache 2, PHP et MariaDB</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-400">Architecture d'un petit site PHP dynamique relié à MariaDB sous Apache.</p>
+            </a>
+            <div class="gac-card p-6">
+              <div class="flex flex-wrap gap-2">
+                <span class="gac-tag text-white">PDF</span>
+                <span class="gac-tag text-white">Companion</span>
+              </div>
+              <h3 class="mt-5 text-2xl font-black text-white">Déploiement de WordPress avec Apache2, PHP et MariaDB</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-400">Vue structurée du déploiement WordPress comme chaîne technique complète.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

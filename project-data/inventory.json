@@ -1,0 +1,931 @@
+{
+  "project": {
+    "name": "GRETA ANALYSTE CYBERSÉCURITÉ",
+    "slug": "greta-analyste-cybersecurite",
+    "tagline": "Plateforme d'apprentissage premium et projet vitrine construit avec les technologies étudiées pendant la formation GRETA.",
+    "source": "Corpus local GRETA - pdfs_context"
+  },
+  "metrics": {
+    "paths": 11,
+    "resources": 29,
+    "pages": 233,
+    "modules": 36,
+    "lessons": 78
+  },
+  "stack": [
+    {
+      "name": "WordPress",
+      "role": "Socle CMS, administration et structure éditoriale.",
+      "visibility": "Hero, Applied Stack, footer, détails architecture."
+    },
+    {
+      "name": "PHP",
+      "role": "Rendu serveur, logique métier du thème et du plugin.",
+      "visibility": "Hero, parcours PHP, sections déploiement et URL rewriting."
+    },
+    {
+      "name": "MariaDB",
+      "role": "Base relationnelle au coeur du parcours et du déploiement.",
+      "visibility": "Hero, dashboard, learning paths MariaDB."
+    },
+    {
+      "name": "Apache2",
+      "role": "Serveur web étudié et utilisé pour l'hébergement WordPress.",
+      "visibility": "Hero, parcours Apache, sections d'architecture."
+    },
+    {
+      "name": "Tailwind CSS",
+      "role": "Design system utilitaire et finition UI.",
+      "visibility": "Hero chips, Applied Stack, documentation projet."
+    },
+    {
+      "name": "Alpine.js",
+      "role": "Interactivité légère : filtres, accordéons, navigation mobile.",
+      "visibility": "Applied Stack, interactions resource library/dashboard."
+    },
+    {
+      "name": "HTML",
+      "role": "Structure sémantique et lecture claire.",
+      "visibility": "Hero, bloc architecture, doctrine produit."
+    }
+  ],
+  "paths": [
+    {
+      "slug": "linux-fondamentaux",
+      "title": "Fondamentaux Linux",
+      "strapline": "Arborescence, navigation, terminal, lecture du système.",
+      "description": "Point d'entrée du parcours. Cette piste regroupe l'arborescence Linux, les commandes de base, les chemins, l'observation du système et la logique des répertoires.",
+      "status": "sourced",
+      "level": "Fondation",
+      "estimatedTime": "3h15",
+      "resourceSlugs": [
+        "partie-1-fondamentaux-linux-greta-final",
+        "partie-6-chemins-exercice-ls-man-grep-greta",
+        "revision-finale-greta-linux-reseau-mariadb"
+      ],
+      "modules": [
+        {
+          "title": "Comprendre la racine Linux",
+          "summary": "Distinguer `/`, `/home`, `/root`, `/etc`, `/var`, `/tmp` et les grands dossiers système.",
+          "lessons": [
+            "Arborescence et racine unique",
+            "Dossiers système clés",
+            "Analogies Windows utiles mais limitées"
+          ]
+        },
+        {
+          "title": "Naviguer dans le terminal",
+          "summary": "Maîtriser `pwd`, `cd`, `ls`, `clear`, les chemins relatifs et absolus.",
+          "lessons": [
+            "Répertoire courant",
+            "Déplacement et listing",
+            "Chemins absolus et relatifs"
+          ]
+        },
+        {
+          "title": "Lire et interroger le système",
+          "summary": "Découvrir `man`, `grep` et l'observation du poste Linux.",
+          "lessons": [
+            "Pages de manuel",
+            "Recherche de texte",
+            "Mini-exercices en `/tmp`"
+          ]
+        }
+      ],
+      "outcomes": [
+        "Se déplacer vite dans le terminal",
+        "Lire la structure d'une machine Linux",
+        "Comprendre où vivent les fichiers utiles"
+      ],
+      "stackNarrative": "Ce parcours alimente la navigation système nécessaire pour héberger ensuite Apache, PHP, WordPress et MariaDB."
+    },
+    {
+      "slug": "linux-reseau-dns",
+      "title": "Réseau Linux & DNS",
+      "strapline": "Prompt, hostname, validation d'interface et résolution de noms.",
+      "description": "Regroupe la configuration réseau Linux, la validation de changements, la résolution DNS et les mécanismes qui rendent un site accessible par nom plutôt que par IP.",
+      "status": "sourced",
+      "level": "Fondation",
+      "estimatedTime": "2h40",
+      "resourceSlugs": [
+        "partie-2-linux-prompt-reseau-greta",
+        "partie-3-dns-resolution-linux-greta",
+        "partie-4-validation-reseau-linux-greta",
+        "revision-finale-greta-linux-reseau-mariadb"
+      ],
+      "modules": [
+        {
+          "title": "Prompt et identité machine",
+          "summary": "Comprendre prompt, hostname et fichiers de configuration réseau.",
+          "lessons": [
+            "Lecture du prompt",
+            "Nom d'hôte et contexte machine",
+            "Fichiers de configuration"
+          ]
+        },
+        {
+          "title": "Validation des changements réseau",
+          "summary": "Appliquer, tester et interpréter l'impact d'un changement d'interface ou de service.",
+          "lessons": [
+            "Redémarrage réseau",
+            "Conséquences côté SSH",
+            "Fichiers système clés"
+          ]
+        },
+        {
+          "title": "Résolution DNS locale",
+          "summary": "Relier un nom de domaine de test à une machine Linux.",
+          "lessons": [
+            "Rôle du DNS",
+            "Résolution locale et fichier hosts",
+            "Accès web par nom"
+          ]
+        }
+      ],
+      "outcomes": [
+        "Diagnostiquer un souci de résolution",
+        "Relier un domaine local à un serveur",
+        "Stabiliser l'environnement avant déploiement web"
+      ],
+      "stackNarrative": "Sans DNS local et réseau propre, le projet WordPress n'est pas atteignable via ses noms de domaine de travail."
+    },
+    {
+      "slug": "lamp-culture-bdd",
+      "title": "Stack LAMP & culture base de données",
+      "strapline": "Comprendre le rôle de Linux, Apache, MariaDB et PHP dans une même chaîne.",
+      "description": "Parcours de lecture architecturale : pourquoi une base relationnelle, pourquoi MariaDB, et comment LAMP structure un site web dynamique.",
+      "status": "sourced",
+      "level": "Fondation",
+      "estimatedTime": "1h30",
+      "resourceSlugs": [
+        "partie-5-lamp-mariadb-greta",
+        "revision-finale-greta-linux-reseau-mariadb"
+      ],
+      "modules": [
+        {
+          "title": "Comprendre la pile LAMP",
+          "summary": "Identifier le rôle de chaque brique dans une application web classique.",
+          "lessons": [
+            "Linux comme base système",
+            "Apache comme serveur web",
+            "PHP et MariaDB dans la chaîne"
+          ]
+        },
+        {
+          "title": "Pourquoi une base et pas un tableur",
+          "summary": "Comparer Excel et une base relationnelle sur les usages réels.",
+          "lessons": [
+            "Volume et relations",
+            "Requêtes et recherche",
+            "Limites du tableur"
+          ]
+        },
+        {
+          "title": "Pourquoi MariaDB dans ce parcours",
+          "summary": "Comprendre le fork de MySQL et le positionnement pédagogique de MariaDB.",
+          "lessons": [
+            "Compatibilité MySQL",
+            "Raison pédagogique du choix",
+            "Préparer la suite du cours"
+          ]
+        }
+      ],
+      "outcomes": [
+        "Lire une architecture web dynamique",
+        "Expliquer la chaîne HTTP -> Apache -> PHP -> MariaDB",
+        "Situer MariaDB dans l'écosystème"
+      ],
+      "stackNarrative": "Cette piste justifie directement pourquoi la plateforme elle-même est construite sur WordPress, PHP, MariaDB et Apache2."
+    },
+    {
+      "slug": "mariadb-administration",
+      "title": "Administration MariaDB",
+      "strapline": "Sécurisation, utilisateurs, privilèges, sauvegarde et restauration.",
+      "description": "Ce parcours regroupe la mise en sécurité initiale de MariaDB, la création d'utilisateurs, la gestion des droits, puis la logique de sauvegarde, transfert et restauration.",
+      "status": "sourced",
+      "level": "Intermédiaire",
+      "estimatedTime": "3h00",
+      "resourceSlugs": [
+        "partie-7-mariadb-securisation-sql-greta",
+        "partie-1-aujourdhui-mariadb-droits-greta-v2",
+        "partie-1-aujourdhui-mariadb-droits-greta",
+        "partie-4-aujourdhui-transfert-sauvegarde-restauration-greta",
+        "revision-finale-greta-linux-reseau-mariadb"
+      ],
+      "modules": [
+        {
+          "title": "Sécurisation initiale",
+          "summary": "Différencier Linux et MariaDB, protéger l'instance et structurer la base de départ.",
+          "lessons": [
+            "mariadb-secure-installation",
+            "Compte administrateur",
+            "Premières commandes SQL"
+          ]
+        },
+        {
+          "title": "Utilisateurs et privilèges",
+          "summary": "Attribuer les bons droits au bon utilisateur, localement ou à distance.",
+          "lessons": [
+            "GRANT et SHOW GRANTS",
+            "localhost versus accès distant",
+            "Principe du moindre privilège"
+          ]
+        },
+        {
+          "title": "Sauvegarde, transfert, restauration",
+          "summary": "Sécuriser le travail par dump SQL et le déplacer entre VM et machine hôte.",
+          "lessons": [
+            "mysqldump",
+            "SFTP et transferts",
+            "Restauration contrôlée"
+          ]
+        }
+      ],
+      "outcomes": [
+        "Créer des utilisateurs dédiés",
+        "Limiter des droits proprement",
+        "Sauvegarder et restaurer une base"
+      ],
+      "stackNarrative": "La plateforme assume MariaDB comme brique applicative et montre le même principe de comptes dédiés et de déploiement propre."
+    },
+    {
+      "slug": "mariadb-modelisation-sql",
+      "title": "Modélisation & SQL MariaDB",
+      "strapline": "Types, clés, liaisons et requêtes conditionnelles.",
+      "description": "Le coeur logique de la donnée : choisir un type, structurer une table, poser des clés étrangères et écrire des requêtes ciblées.",
+      "status": "sourced",
+      "level": "Intermédiaire",
+      "estimatedTime": "3h10",
+      "resourceSlugs": [
+        "partie-2-aujourdhui-modelisation-types-mariadb-greta",
+        "partie-3-aujourdhui-cles-etrangeres-alter-table-greta",
+        "partie-7-aujourdhui-requetes-sql-where-like-greta"
+      ],
+      "modules": [
+        {
+          "title": "Types et modélisation",
+          "summary": "Associer la bonne colonne au bon type et poser une clé primaire cohérente.",
+          "lessons": [
+            "Colonnes et types",
+            "Clés primaires",
+            "Tables de liaison"
+          ]
+        },
+        {
+          "title": "Clés étrangères et structure",
+          "summary": "Relier proprement des tables et modifier une structure existante.",
+          "lessons": [
+            "FOREIGN KEY",
+            "ALTER TABLE",
+            "Contraintes et cohérence technique"
+          ]
+        },
+        {
+          "title": "Filtrer en SQL",
+          "summary": "Maîtriser `SELECT`, `WHERE`, `BETWEEN` et `LIKE` sur données numériques et textuelles.",
+          "lessons": [
+            "Sélection ciblée",
+            "Conditions numériques",
+            "Recherche textuelle"
+          ]
+        }
+      ],
+      "outcomes": [
+        "Modéliser une base simple",
+        "Relier des tables proprement",
+        "Écrire des requêtes filtrées utiles"
+      ],
+      "stackNarrative": "Ce parcours nourrit les structures relationnelles derrière WordPress et les sites PHP dynamiques."
+    },
+    {
+      "slug": "mariadb-tp",
+      "title": "TPs MariaDB",
+      "strapline": "Commerce, bibliothèque, journal et import CSV.",
+      "description": "Zone de pratique guidée. Les TPs montrent la chaîne complète : modéliser, nettoyer la donnée, importer, vérifier, sauvegarder et corriger.",
+      "status": "sourced",
+      "level": "Pratique",
+      "estimatedTime": "4h20",
+      "resourceSlugs": [
+        "jour-4-greta-commerce-mariadb-importcsv-v2",
+        "jour-4-greta-commerce-mariadb-importcsv",
+        "partie-5-aujourdhui-tp-mariadb-bibliotheque-greta",
+        "partie-6-aujourdhui-tp-mariadb-journal-greta"
+      ],
+      "modules": [
+        {
+          "title": "TP Commerce",
+          "summary": "Conception, import CSV, nettoyage Windows/Linux et sauvegarde.",
+          "lessons": [
+            "Architecture SQL",
+            "Nettoyage BOM/CRLF",
+            "Import et vérification"
+          ]
+        },
+        {
+          "title": "TP Bibliothèque",
+          "summary": "Rejouer un cycle complet base + utilisateur + droits + dump.",
+          "lessons": [
+            "Création de base",
+            "Création d'utilisateur",
+            "mysqldump final"
+          ]
+        },
+        {
+          "title": "TP Journal",
+          "summary": "Énoncé, correction guidée et différences avec la solution du professeur.",
+          "lessons": [
+            "Pas à pas",
+            "Correction",
+            "Commandes à retenir"
+          ]
+        }
+      ],
+      "outcomes": [
+        "Refaire les TPs sans se perdre",
+        "Déboguer des imports CSV",
+        "Passer de la théorie à l'exécution"
+      ],
+      "stackNarrative": "Cette piste inspire le ton du produit : plus proche d'un atelier technique que d'un simple dépôt de fichiers."
+    },
+    {
+      "slug": "apache-deploiement-multisites",
+      "title": "Apache2 : déploiement & multisites",
+      "strapline": "VM, proxy APT, VirtualHosts, sites clients et séparation des contenus.",
+      "description": "Du serveur tout juste préparé au serveur multi-clients. On y trouve la première page web, le déploiement client4 et l'organisation multisite.",
+      "status": "sourced",
+      "level": "Intermédiaire",
+      "estimatedTime": "3h30",
+      "resourceSlugs": [
+        "support-apache2-clonage-vm-proxy-greta-v2",
+        "support-cours-apache2-client4-15-avril-2026",
+        "support-apache2-multisites-clients-greta-v3"
+      ],
+      "modules": [
+        {
+          "title": "Préparer la machine web",
+          "summary": "Cloner une VM, régler le proxy APT, installer Apache et valider l'accès.",
+          "lessons": [
+            "Clonage et SSH",
+            "Proxy et installation",
+            "Première page Apache"
+          ]
+        },
+        {
+          "title": "Déployer client4",
+          "summary": "Créer un site dynamique avec Linux, Apache2 et MariaDB.",
+          "lessons": [
+            "Résolution locale",
+            "Utilisateur Linux dédié",
+            "Connexion à la base"
+          ]
+        },
+        {
+          "title": "Passer au multi-clients",
+          "summary": "Séparer les contenus et préparer un hébergement propre pour plusieurs sites.",
+          "lessons": [
+            "VirtualHosts",
+            "Dossiers clients",
+            "Sécurité d'accès"
+          ]
+        }
+      ],
+      "outcomes": [
+        "Déployer un site sur Apache",
+        "Structurer des VirtualHosts",
+        "Préparer un hébergement multi-clients lisible"
+      ],
+      "stackNarrative": "Le projet utilise Apache2 comme fondation serveur et le dit explicitement dans le hero et la section architecture."
+    },
+    {
+      "slug": "apache-securite-reecriture",
+      "title": "Apache2 : sécurité, .htaccess & URL rewriting",
+      "strapline": "Protection d'accès, regex, mod_rewrite et intégration PHP.",
+      "description": "Cette piste réunit l'authentification basique sous Apache, la logique regex et la réécriture d'URL jusqu'à la récupération finale des paramètres côté PHP.",
+      "status": "sourced",
+      "level": "Intermédiaire",
+      "estimatedTime": "3h00",
+      "resourceSlugs": [
+        "support-premium-apache-htaccess-protection-site-greta",
+        "support-premium-regex-et-reecriture-url-apache-greta",
+        "support-premium-reecriture-url-apache-client4-greta-v2",
+        "support-apache-rewrite-htaccess-client4-greta-v1"
+      ],
+      "modules": [
+        {
+          "title": "Protéger un site Apache",
+          "summary": "Utiliser `.htaccess` et `htpasswd` pour restreindre l'accès sans développer un login complet.",
+          "lessons": [
+            "Authentification HTTP basique",
+            "Fichiers `.htaccess`",
+            "Protection de zone"
+          ]
+        },
+        {
+          "title": "Comprendre les regex",
+          "summary": "Lire la logique des motifs avant de les appliquer à Apache.",
+          "lessons": [
+            "Motifs de base",
+            "Groupes capturants",
+            "Application aux URLs"
+          ]
+        },
+        {
+          "title": "Réécriture d'URL + PHP",
+          "summary": "Activer `mod_rewrite`, autoriser `.htaccess` et transmettre proprement un identifiant à PHP.",
+          "lessons": [
+            "Activation du module",
+            "AllowOverride et configuration",
+            "URL réelle versus URL réécrite"
+          ]
+        }
+      ],
+      "outcomes": [
+        "Protéger un site simple",
+        "Écrire une règle de rewrite compréhensible",
+        "Faire le lien entre Apache et le code PHP"
+      ],
+      "stackNarrative": "Cette piste donne une vraie densité technique au produit et montre que PHP n'est pas isolé de la couche serveur."
+    },
+    {
+      "slug": "php-developpement",
+      "title": "Développement PHP",
+      "strapline": "Applications web dynamiques, MariaDB, validation et WordPress.",
+      "description": "Parcours stratégique de la plateforme. Il s'appuie sur les supports PHP déjà présents et étend la structure pour couvrir les fondamentaux PHP attendus dans un portfolio sérieux.",
+      "status": "hybrid",
+      "level": "Structurant",
+      "estimatedTime": "5h10",
+      "resourceSlugs": [
+        "support-parcinfo-php-mariadb-apache-greta-v1",
+        "support-premium-reecriture-url-apache-client4-greta-v2",
+        "support-cours-wordpress-apache2-mariadb-16-avril-2026",
+        "support-wordpress-apache2-php-mariadb-client4-16-avril-2026"
+      ],
+      "modules": [
+        {
+          "title": "Architecture d'un site PHP + MariaDB",
+          "summary": "Lire la chaîne navigateur -> Apache -> PHP -> MariaDB à travers le site parcinfo.",
+          "lessons": [
+            "index.php et dump SQL",
+            "Paramètres imposés par le code",
+            "Permissions et déploiement"
+          ]
+        },
+        {
+          "title": "PHP coeur de langage",
+          "summary": "Structure future-ready pour syntaxe, variables, conditions, boucles, tableaux et fonctions.",
+          "lessons": [
+            "Variables et types",
+            "Conditions et boucles",
+            "Tableaux et fonctions"
+          ]
+        },
+        {
+          "title": "Entrées utilisateur et sécurité",
+          "summary": "Structure future-ready pour formulaires, superglobales, sessions, cookies, validation et sanitization.",
+          "lessons": [
+            "Formulaires et `$_POST`",
+            "Sessions et cookies",
+            "Validation et échappement"
+          ]
+        },
+        {
+          "title": "PHP relié au serveur et au CMS",
+          "summary": "Relier PHP à MariaDB, à la réécriture Apache et au contexte WordPress.",
+          "lessons": [
+            "Accès base et bonnes pratiques",
+            "Récupération de paramètres réécrits",
+            "PHP dans WordPress"
+          ]
+        }
+      ],
+      "outcomes": [
+        "Présenter PHP comme compétence active du projet",
+        "Relier langage, serveur et base de données",
+        "Préparer un vrai axe portfolio"
+      ],
+      "stackNarrative": "Cette section est volontairement centrale : le projet montre que PHP n'a pas seulement été étudié, il est utilisé pour construire la plateforme."
+    },
+    {
+      "slug": "wordpress-stack",
+      "title": "WordPress sur Apache/PHP/MariaDB",
+      "strapline": "Déploiement de WordPress comme chaîne technique complète.",
+      "description": "Parcours de déploiement concret : VirtualHost Apache, modules PHP, base dédiée, `wp-config.php`, permissions, uploads et installation finale.",
+      "status": "sourced",
+      "level": "Applied",
+      "estimatedTime": "2h45",
+      "resourceSlugs": [
+        "support-wordpress-apache2-php-mariadb-client4-16-avril-2026",
+        "support-cours-wordpress-apache2-mariadb-16-avril-2026",
+        "support-cours-apache2-client4-15-avril-2026"
+      ],
+      "modules": [
+        {
+          "title": "Comprendre la chaîne WordPress",
+          "summary": "Lire Apache -> PHP -> WordPress -> MariaDB comme une architecture réelle.",
+          "lessons": [
+            "Nom local et résolution",
+            "VirtualHost dédié",
+            "Base et `wp-config.php`"
+          ]
+        },
+        {
+          "title": "Déployer WordPress proprement",
+          "summary": "Télécharger, extraire, régler les propriétaires et activer le site.",
+          "lessons": [
+            "Téléchargement et extraction",
+            "Permissions Linux",
+            "Activation Apache"
+          ]
+        },
+        {
+          "title": "Corriger les incidents courants",
+          "summary": "Traiter les limites d'upload PHP, plugins et petites erreurs de configuration.",
+          "lessons": [
+            "Modules PHP",
+            "Taille d'upload",
+            "Vérification navigateur"
+          ]
+        }
+      ],
+      "outcomes": [
+        "Déployer un WordPress simple sur Linux",
+        "Expliquer son architecture technique",
+        "Relier le CMS aux briques étudiées en cours"
+      ],
+      "stackNarrative": "Cette piste est la preuve la plus directe du concept produit : le CMS étudié devient le CMS du projet."
+    },
+    {
+      "slug": "nginx-php-fpm",
+      "title": "Nginx & PHP-FPM",
+      "strapline": "Alternative serveur et lecture comparative avec Apache.",
+      "description": "Parcours bonus orienté exploitation : installation Nginx, permissions, sites-available/sites-enabled et différence de passage PHP via PHP-FPM.",
+      "status": "sourced",
+      "level": "Complément",
+      "estimatedTime": "1h20",
+      "resourceSlugs": [
+        "nginx-phpfpm-web2-support"
+      ],
+      "modules": [
+        {
+          "title": "Poser Nginx sur WEB2",
+          "summary": "Installer, vérifier et lire la structure de configuration Nginx.",
+          "lessons": [
+            "Installation",
+            "service status",
+            "nginx -t"
+          ]
+        },
+        {
+          "title": "Créer un site utilisateur",
+          "summary": "Préparer un utilisateur client et gérer les permissions avec `www-data`.",
+          "lessons": [
+            "adduser",
+            "chown/chmod",
+            "accès aux fichiers"
+          ]
+        },
+        {
+          "title": "Lire la différence avec Apache",
+          "summary": "Comprendre le rôle de PHP-FPM et l'organisation des sites Nginx.",
+          "lessons": [
+            "sites-available/sites-enabled",
+            "PHP-FPM",
+            "comparaison Apache/Nginx"
+          ]
+        }
+      ],
+      "outcomes": [
+        "Comparer deux architectures serveur",
+        "Comprendre le rôle de PHP-FPM",
+        "Étendre la culture web côté infra"
+      ],
+      "stackNarrative": "La plateforme reste Apache-first, mais elle montre aussi la culture comparative acquise pendant la formation."
+    }
+  ],
+  "resources": [
+    {
+      "slug": "partie-1-fondamentaux-linux-greta-final",
+      "title": "Partie 1 — Fondamentaux Linux",
+      "file": "pdfs_context/Partie_1_Fondamentaux_Linux_GRETA_final.pdf",
+      "pages": 8,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["linux", "terminal"],
+      "relatedPaths": ["linux-fondamentaux"],
+      "summary": "Arborescence, navigation, observation du système et recherche de texte."
+    },
+    {
+      "slug": "partie-2-linux-prompt-reseau-greta",
+      "title": "Partie 2 — Prompt, fichiers de configuration et bases du réseau",
+      "file": "pdfs_context/Partie_2_Linux_Prompt_Reseau_GRETA.pdf",
+      "pages": 7,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["linux", "reseau"],
+      "relatedPaths": ["linux-reseau-dns"],
+      "summary": "Prompt, hostname, bases réseau Linux et contexte machine."
+    },
+    {
+      "slug": "partie-3-dns-resolution-linux-greta",
+      "title": "Partie 3 — Résolution DNS et accès à un site web",
+      "file": "pdfs_context/Partie_3_DNS_Resolution_Linux_GRETA.pdf",
+      "pages": 6,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["dns", "reseau", "linux"],
+      "relatedPaths": ["linux-reseau-dns"],
+      "summary": "Résolution DNS, accès à un site web et logique des noms."
+    },
+    {
+      "slug": "partie-4-validation-reseau-linux-greta",
+      "title": "Partie 4 — Validation des changements réseau",
+      "file": "pdfs_context/Partie_4_Validation_Reseau_Linux_GRETA.pdf",
+      "pages": 5,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["reseau", "linux"],
+      "relatedPaths": ["linux-reseau-dns"],
+      "summary": "Validation des changements réseau et rappels de fichiers système."
+    },
+    {
+      "slug": "partie-6-chemins-exercice-ls-man-grep-greta",
+      "title": "Partie 6 — Chemins, exercice pratique, options de ls, manuel et grep",
+      "file": "pdfs_context/Partie_6_Chemins_Exercice_ls_man_grep_GRETA.pdf",
+      "pages": 6,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["linux", "terminal"],
+      "relatedPaths": ["linux-fondamentaux"],
+      "summary": "Chemins relatifs/absolus, `ls`, `man`, `grep` et exercice terminal."
+    },
+    {
+      "slug": "partie-5-lamp-mariadb-greta",
+      "title": "Partie 5 — Stack LAMP et MariaDB",
+      "file": "pdfs_context/Partie_5_LAMP_MariaDB_GRETA.pdf",
+      "pages": 5,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["lamp", "mariadb", "php", "apache"],
+      "relatedPaths": ["lamp-culture-bdd"],
+      "summary": "Introduction à LAMP, aux SGBD et au rôle de MariaDB dans le web."
+    },
+    {
+      "slug": "partie-7-mariadb-securisation-sql-greta",
+      "title": "Partie 7 — MariaDB : sécurisation, bases, utilisateurs et premières commandes SQL",
+      "file": "pdfs_context/Partie_7_MariaDB_Securisation_SQL_GRETA.pdf",
+      "pages": 8,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["mariadb", "sql", "securite"],
+      "relatedPaths": ["mariadb-administration"],
+      "summary": "Sécurisation initiale, base dédiée, utilisateur dédié et premières commandes."
+    },
+    {
+      "slug": "partie-1-aujourdhui-mariadb-droits-greta",
+      "title": "Partie 1 — MariaDB : utilisateurs, privilèges et contrôle des droits",
+      "file": "pdfs_context/Partie_1_Aujourdhui_MariaDB_Droits_GRETA.pdf",
+      "pages": 5,
+      "format": "PDF",
+      "status": "variant",
+      "domains": ["mariadb", "droits"],
+      "relatedPaths": ["mariadb-administration"],
+      "summary": "Version initiale sur les utilisateurs, privilèges et tests d'accès."
+    },
+    {
+      "slug": "partie-1-aujourdhui-mariadb-droits-greta-v2",
+      "title": "Partie 1 — MariaDB : utilisateurs, privilèges et contrôle des droits (v2)",
+      "file": "pdfs_context/Partie_1_Aujourdhui_MariaDB_Droits_GRETA_v2.pdf",
+      "pages": 4,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["mariadb", "droits"],
+      "relatedPaths": ["mariadb-administration"],
+      "summary": "Version corrigée sur les GRANT, SHOW GRANTS et le principe du moindre privilège."
+    },
+    {
+      "slug": "partie-4-aujourdhui-transfert-sauvegarde-restauration-greta",
+      "title": "Partie 4 — Transfert, sauvegarde et restauration MariaDB",
+      "file": "pdfs_context/Partie_4_Aujourdhui_Transfert_Sauvegarde_Restauration_GRETA.pdf",
+      "pages": 7,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["mariadb", "backup", "sftp"],
+      "relatedPaths": ["mariadb-administration"],
+      "summary": "Logique complète sauvegarder -> transférer -> restaurer."
+    },
+    {
+      "slug": "partie-2-aujourdhui-modelisation-types-mariadb-greta",
+      "title": "Partie 2 — MariaDB / modélisation des données",
+      "file": "pdfs_context/Partie_2_Aujourdhui_Modelisation_Types_MariaDB_GRETA.pdf",
+      "pages": 5,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["mariadb", "sql", "modelisation"],
+      "relatedPaths": ["mariadb-modelisation-sql"],
+      "summary": "Clés primaires, table de liaison et choix des types de données."
+    },
+    {
+      "slug": "partie-3-aujourdhui-cles-etrangeres-alter-table-greta",
+      "title": "Partie 3 — MariaDB / clés étrangères et ALTER TABLE",
+      "file": "pdfs_context/Partie_3_Aujourdhui_Clés_Etrangeres_Alter_Table_GRETA.pdf",
+      "pages": 4,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["mariadb", "sql", "modelisation"],
+      "relatedPaths": ["mariadb-modelisation-sql"],
+      "summary": "Création de table de liaison, clés étrangères et modification de structure."
+    },
+    {
+      "slug": "partie-7-aujourdhui-requetes-sql-where-like-greta",
+      "title": "Partie 7 — Requêtes SQL conditionnelles",
+      "file": "pdfs_context/Partie_7_Aujourdhui_Requetes_SQL_Where_Like_GRETA.pdf",
+      "pages": 4,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["sql", "mariadb"],
+      "relatedPaths": ["mariadb-modelisation-sql"],
+      "summary": "Filtrer des résultats avec `SELECT`, `WHERE`, `BETWEEN` et `LIKE`."
+    },
+    {
+      "slug": "jour-4-greta-commerce-mariadb-importcsv",
+      "title": "Jour 4 — Commerce, MariaDB, import CSV",
+      "file": "pdfs_context/Jour_4_GRETA_Commerce_MariaDB_ImportCSV.pdf",
+      "pages": 10,
+      "format": "PDF",
+      "status": "variant",
+      "domains": ["mariadb", "csv", "tp"],
+      "relatedPaths": ["mariadb-tp"],
+      "summary": "Version initiale du TP commerce avec import CSV et nettoyage."
+    },
+    {
+      "slug": "jour-4-greta-commerce-mariadb-importcsv-v2",
+      "title": "Jour 4 — TP Commerce sous Linux et MariaDB (v2)",
+      "file": "pdfs_context/Jour_4_GRETA_Commerce_MariaDB_ImportCSV_v2.pdf",
+      "pages": 11,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["mariadb", "csv", "tp"],
+      "relatedPaths": ["mariadb-tp"],
+      "summary": "Version approfondie du TP commerce : modélisation, BOM, CRLF, import, dump."
+    },
+    {
+      "slug": "partie-5-aujourdhui-tp-mariadb-bibliotheque-greta",
+      "title": "Partie 5 — TP MariaDB : Bibliothèque",
+      "file": "pdfs_context/Partie_5_Aujourdhui_TP_MariaDB_Bibliotheque_GRETA.pdf",
+      "pages": 7,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["mariadb", "tp"],
+      "relatedPaths": ["mariadb-tp"],
+      "summary": "Exercice de solidification avec base, utilisateur, droits et sauvegarde."
+    },
+    {
+      "slug": "partie-6-aujourdhui-tp-mariadb-journal-greta",
+      "title": "Partie 6 — TP MariaDB : Base journal",
+      "file": "pdfs_context/Partie_6_Aujourdhui_TP_MariaDB_Journal_GRETA.pdf",
+      "pages": 7,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["mariadb", "tp"],
+      "relatedPaths": ["mariadb-tp"],
+      "summary": "Énoncé, correction détaillée et commandes clés à retenir."
+    },
+    {
+      "slug": "support-apache2-clonage-vm-proxy-greta-v2",
+      "title": "Serveur Web Apache 2 — Clonage de VM, proxy APT et première page web",
+      "file": "pdfs_context/Support_Apache2_Clonage_VM_Proxy_GRETA_v2.pdf",
+      "pages": 10,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["apache", "linux", "web"],
+      "relatedPaths": ["apache-deploiement-multisites"],
+      "summary": "Préparer une machine web Apache depuis la VM jusqu'à la première page servie."
+    },
+    {
+      "slug": "support-cours-apache2-client4-15-avril-2026",
+      "title": "Apache2 Client4 — Déploiement complet d'un site web",
+      "file": "pdfs_context/Support_Cours_Apache2_Client4_15_avril_2026.pdf",
+      "pages": 10,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["apache", "mariadb", "linux", "web"],
+      "relatedPaths": ["apache-deploiement-multisites", "wordpress-stack"],
+      "summary": "Déploiement d'un site dynamique de cinéma via Linux, Apache2 et MariaDB."
+    },
+    {
+      "slug": "support-apache2-multisites-clients-greta-v3",
+      "title": "Apache 2 — Hébergement multi-clients",
+      "file": "pdfs_context/Support_Apache2_Multisites_Clients_GRETA_v3.pdf",
+      "pages": 10,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["apache", "vhost", "web"],
+      "relatedPaths": ["apache-deploiement-multisites"],
+      "summary": "Dossiers, sécurité et accès à plusieurs sites sous Apache."
+    },
+    {
+      "slug": "support-premium-apache-htaccess-protection-site-greta",
+      "title": "Protéger un site Apache avec HTAccess",
+      "file": "pdfs_context/Support_Premium_Apache_HTAccess_Protection_Site_GRETA.pdf",
+      "pages": 11,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["apache", "htaccess", "securite"],
+      "relatedPaths": ["apache-securite-reecriture"],
+      "summary": "Contrôler l'accès à un site Apache avec authentification basique."
+    },
+    {
+      "slug": "support-premium-regex-et-reecriture-url-apache-greta",
+      "title": "Regex et réécriture d'URL",
+      "file": "pdfs_context/Support_Premium_Regex_et_Reecriture_URL_Apache_GRETA.pdf",
+      "pages": 14,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["apache", "regex", "url-rewriting"],
+      "relatedPaths": ["apache-securite-reecriture"],
+      "summary": "Comprendre d'abord les regex puis les appliquer à la réécriture d'URL."
+    },
+    {
+      "slug": "support-apache-rewrite-htaccess-client4-greta-v1",
+      "title": "Apache mod_rewrite et .htaccess pour client4",
+      "file": "pdfs_context/Support_Apache_Rewrite_HTACCESS_Client4_GRETA_v1.pdf",
+      "pages": 11,
+      "format": "PDF",
+      "status": "variant",
+      "domains": ["apache", "php", "url-rewriting"],
+      "relatedPaths": ["apache-securite-reecriture"],
+      "summary": "Version initiale du support de réécriture d'URL côté client4."
+    },
+    {
+      "slug": "support-premium-reecriture-url-apache-client4-greta-v2",
+      "title": "Réécriture d'URL avec Apache, mod_rewrite, .htaccess et intégration PHP",
+      "file": "pdfs_context/Support_Premium_Reecriture_URL_Apache_Client4_GRETA_v2.pdf",
+      "pages": 11,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["apache", "php", "url-rewriting"],
+      "relatedPaths": ["apache-securite-reecriture", "php-developpement"],
+      "summary": "Version enrichie : URL réelle, URL réécrite et récupération finale dans le script PHP."
+    },
+    {
+      "slug": "support-parcinfo-php-mariadb-apache-greta-v1",
+      "title": "Déployer le site client3 parcinfo avec Apache 2, PHP et MariaDB",
+      "file": "pdfs_context/Support_Parcinfo_PHP_MariaDB_Apache_GRETA_v1.pdf",
+      "pages": 12,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["php", "apache", "mariadb", "web"],
+      "relatedPaths": ["php-developpement"],
+      "summary": "Architecture d'un petit site PHP dynamique relié à MariaDB sous Apache."
+    },
+    {
+      "slug": "support-cours-wordpress-apache2-mariadb-16-avril-2026",
+      "title": "Déploiement de WordPress avec Apache2, PHP et MariaDB",
+      "file": "pdfs_context/Support_Cours_WordPress_Apache2_MariaDB_16_avril_2026.pdf",
+      "pages": 7,
+      "format": "PDF",
+      "status": "companion",
+      "domains": ["wordpress", "php", "apache", "mariadb"],
+      "relatedPaths": ["php-developpement", "wordpress-stack"],
+      "summary": "Vue structurée du déploiement WordPress avec la chaîne technique complète."
+    },
+    {
+      "slug": "support-wordpress-apache2-php-mariadb-client4-16-avril-2026",
+      "title": "Installation de WordPress avec Apache2, PHP et MariaDB — Client4",
+      "file": "pdfs_context/Support_WordPress_Apache2_PHP_MariaDB_Client4_16_avril_2026.pdf",
+      "pages": 9,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["wordpress", "php", "apache", "mariadb"],
+      "relatedPaths": ["php-developpement", "wordpress-stack"],
+      "summary": "Version pratique orientée déploiement complet de WordPress sur client4."
+    },
+    {
+      "slug": "nginx-phpfpm-web2-support",
+      "title": "Nginx, Virtual Hosts et PHP-FPM sur WEB2",
+      "file": "pdfs_context/nginx_phpfpm_web2_support.pdf",
+      "pages": 6,
+      "format": "PDF",
+      "status": "canonical",
+      "domains": ["nginx", "php-fpm", "linux", "web"],
+      "relatedPaths": ["nginx-php-fpm"],
+      "summary": "Support comparatif Nginx/PHP-FPM avec incidents réels de terminal."
+    },
+    {
+      "slug": "revision-finale-greta-linux-reseau-mariadb",
+      "title": "Document final de révision — Linux, réseau, DNS, LAMP et MariaDB",
+      "file": "pdfs_context/Revision_Finale_GRETA_Linux_Reseau_MariaDB.pdf",
+      "pages": 13,
+      "format": "PDF",
+      "status": "cross-track",
+      "domains": ["linux", "reseau", "dns", "lamp", "mariadb"],
+      "relatedPaths": [
+        "linux-fondamentaux",
+        "linux-reseau-dns",
+        "lamp-culture-bdd",
+        "mariadb-administration"
+      ],
+      "summary": "Synthèse finale regroupant l'essentiel de la journée Linux, réseau, DNS, LAMP et MariaDB."
+    }
+  ]
+}

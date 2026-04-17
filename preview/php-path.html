@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parcours PHP — Preview</title>
+    <link rel="stylesheet" href="../wp-content/themes/greta-analyste-cybersecurite/style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui"],
+            },
+            colors: {
+              gac: {
+                bg: "#0e1116",
+                surface: "#141922",
+                surfaceSoft: "#1a2130",
+                accent: "#31c48d",
+                warm: "#f59e0b",
+                rose: "#fb7185",
+                mist: "#98a3b3",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="gac-shell bg-[#0e1116] text-white antialiased">
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0e1116]/90 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a class="text-sm font-black uppercase tracking-[0.16em] text-white" href="./index.html">
+          GRETA ANALYSTE CYBERSÉCURITÉ
+        </a>
+        <nav class="hidden items-center gap-6 text-sm text-slate-300 lg:flex">
+          <a href="./index.html" class="transition hover:text-white">Preview home</a>
+          <a href="./php-module.html" class="transition hover:text-white">Module</a>
+          <a href="./php-lesson.html" class="transition hover:text-white">Lesson</a>
+          <a href="./parcinfo-resource.html" class="transition hover:text-white">Resource</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative isolate overflow-hidden border-b border-white/10">
+        <div class="absolute inset-0">
+          <img class="h-full w-full object-cover opacity-30" src="./assets/php-path.png" alt="Support PHP">
+        </div>
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative mx-auto flex min-h-[72vh] max-w-7xl items-end px-4 pb-14 pt-24 sm:px-6 lg:px-8">
+          <div class="max-w-4xl space-y-5">
+            <p class="gac-section-label">Learning path detail preview</p>
+            <h1 class="text-5xl font-black text-white sm:text-6xl lg:text-7xl">Développement PHP</h1>
+            <p class="max-w-3xl text-lg leading-8 text-slate-200 sm:text-xl">
+              Parcours stratégique de la plateforme. Il transforme les supports PHP, Apache, MariaDB et WordPress
+              présents dans le corpus en progression lisible et en preuve d'application technique.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span class="gac-tag text-white">Structurant</span>
+              <span class="gac-tag text-white">Hybrid</span>
+              <span class="gac-tag text-white">5h10</span>
+              <span class="gac-tag text-white">4 modules</span>
+            </div>
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a class="gac-button-primary" href="./php-module.html">Ouvrir le module 1</a>
+              <a class="gac-button-secondary" href="./parcinfo-resource.html">Voir une ressource source</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-white/10 py-16">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+          <div class="space-y-4">
+            <p class="gac-section-label">Story</p>
+            <h2 class="text-4xl font-black text-white">Le parcours où le langage devient produit.</h2>
+            <p class="text-base leading-8 text-slate-400">
+              La narration PHP n'est pas isolée. Elle relie la logique serveur, la base MariaDB, la réécriture d'URL,
+              les formulaires, l'échappement et le contexte WordPress pour assumer la stack étudiée comme identité du produit.
+            </p>
+          </div>
+          <div class="gac-card p-6">
+            <p class="gac-section-label">Applied stack</p>
+            <div class="mt-4 flex flex-wrap gap-3">
+              <span class="gac-tag text-white">PHP</span>
+              <span class="gac-tag text-white">Apache2</span>
+              <span class="gac-tag text-white">MariaDB</span>
+              <span class="gac-tag text-white">WordPress</span>
+              <span class="gac-tag text-white">Tailwind CSS</span>
+              <span class="gac-tag text-white">Alpine.js</span>
+            </div>
+            <p class="mt-4 text-sm leading-7 text-slate-400">
+              Ce parcours est visible à la fois dans les contenus et dans le code qui structure la plateforme.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-white/10 py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-8 max-w-3xl space-y-4">
+            <p class="gac-section-label">Modules</p>
+            <h2 class="text-4xl font-black text-white">Structure du parcours PHP.</h2>
+          </div>
+          <div class="grid gap-4">
+            <a class="gac-card p-5 transition hover:-translate-y-1" href="./php-module.html">
+              <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                <div class="space-y-3">
+                  <div class="flex flex-wrap gap-2">
+                    <span class="gac-tag text-white">Module 1</span>
+                    <span class="gac-tag text-white">3 leçons</span>
+                    <span class="gac-tag text-white">54 min</span>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold text-white">Architecture d'un site PHP + MariaDB</h3>
+                    <p class="mt-2 max-w-3xl text-sm leading-7 text-slate-400">
+                      Lire la chaîne navigateur vers Apache puis PHP, base de données et contraintes de déploiement à travers le site parcinfo.
+                    </p>
+                  </div>
+                </div>
+                <span class="gac-button-secondary">Voir le module</span>
+              </div>
+            </a>
+
+            <div class="gac-card p-5">
+              <div class="flex flex-wrap gap-2">
+                <span class="gac-tag text-white">Module 2</span>
+                <span class="gac-tag text-white">3 leçons</span>
+                <span class="gac-tag text-white">54 min</span>
+              </div>
+              <h3 class="mt-4 text-2xl font-bold text-white">PHP coeur de langage</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-400">
+                Variables, types, conditions, boucles, tableaux et fonctions pour consolider le socle attendu dans un portfolio sérieux.
+              </p>
+            </div>
+
+            <div class="gac-card p-5">
+              <div class="flex flex-wrap gap-2">
+                <span class="gac-tag text-white">Module 3</span>
+                <span class="gac-tag text-white">3 leçons</span>
+                <span class="gac-tag text-white">54 min</span>
+              </div>
+              <h3 class="mt-4 text-2xl font-bold text-white">Entrées utilisateur et sécurité</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-400">
+                Formulaires, superglobales, sessions, cookies, validation, sanitization et échappement.
+              </p>
+            </div>
+
+            <div class="gac-card p-5">
+              <div class="flex flex-wrap gap-2">
+                <span class="gac-tag text-white">Module 4</span>
+                <span class="gac-tag text-white">3 leçons</span>
+                <span class="gac-tag text-white">54 min</span>
+              </div>
+              <h3 class="mt-4 text-2xl font-bold text-white">PHP relié au serveur et au CMS</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-400">
+                Accès base, paramètres réécrits sous Apache et compréhension de WordPress comme application PHP.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-white/10 py-16">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
+          <div class="space-y-4">
+            <p class="gac-section-label">Practical outcomes</p>
+            <h2 class="text-4xl font-black text-white">Ce que le parcours rend visible dans le projet.</h2>
+            <ul class="space-y-3 text-base leading-8 text-slate-300">
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-amber-300"></span><span>Présenter PHP comme compétence active du projet.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-amber-300"></span><span>Relier langage, serveur et base de données.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-amber-300"></span><span>Préparer un axe portfolio crédible pour Railway et GitHub.</span></li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <p class="gac-section-label">Resources</p>
+            <h2 class="text-4xl font-black text-white">Supports sources rattachés au parcours.</h2>
+            <div class="grid gap-4 md:grid-cols-2">
+              <a class="gac-card p-5 transition hover:-translate-y-1" href="./parcinfo-resource.html">
+                <h3 class="text-lg font-bold text-white">Déployer le site client3 parcinfo avec Apache 2, PHP et MariaDB</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-400">Architecture d'un petit site PHP dynamique relié à MariaDB sous Apache.</p>
+              </a>
+              <div class="gac-card p-5">
+                <h3 class="text-lg font-bold text-white">Réécriture d'URL avec Apache, mod_rewrite, .htaccess et intégration PHP</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-400">Version enrichie pour récupérer proprement des paramètres côté script.</p>
+              </div>
+              <div class="gac-card p-5">
+                <h3 class="text-lg font-bold text-white">Déploiement de WordPress avec Apache2, PHP et MariaDB</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-400">Support compagnon pour lire le CMS comme chaîne technique complète.</p>
+              </div>
+              <div class="gac-card p-5">
+                <h3 class="text-lg font-bold text-white">Installation de WordPress avec Apache2, PHP et MariaDB — Client4</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-400">Version pratique orientée déploiement complet sur machine dédiée.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
